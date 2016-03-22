@@ -14,6 +14,7 @@
 		D2E14C3E1C9C842F007D149A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E14C3D1C9C842F007D149A /* Assets.xcassets */; };
 		D2E14C411C9C842F007D149A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E14C3F1C9C842F007D149A /* LaunchScreen.storyboard */; };
 		D2E14C4C1C9C842F007D149A /* RAVSevenSegmentViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E14C4B1C9C842F007D149A /* RAVSevenSegmentViewTests.m */; };
+		D2E14C5E1C9C9143007D149A /* RAVSegmentIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E14C5A1C9C9143007D149A /* RAVSegmentIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		D2E14C471C9C842F007D149A /* RAVSevenSegmentViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAVSevenSegmentViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E14C4B1C9C842F007D149A /* RAVSevenSegmentViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAVSevenSegmentViewTests.m; sourceTree = "<group>"; };
 		D2E14C4D1C9C842F007D149A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E14C591C9C9143007D149A /* RAVSegmentIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSegmentIndicatorView.h; sourceTree = "<group>"; };
+		D2E14C5A1C9C9143007D149A /* RAVSegmentIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVSegmentIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +95,7 @@
 				D2E14C421C9C842F007D149A /* Info.plist */,
 				D2E14C311C9C842F007D149A /* Supporting Files */,
 			);
-			name = RAVSevenSegmentViewDemo;
-			path = RAVSevenSegmentView;
+			path = RAVSevenSegmentViewDemo;
 			sourceTree = "<group>";
 		};
 		D2E14C311C9C842F007D149A /* Supporting Files */ = {
@@ -116,8 +118,11 @@
 		D2E14C561C9C843B007D149A /* RAVSevenSegmentView */ = {
 			isa = PBXGroup;
 			children = (
+				D2E14C591C9C9143007D149A /* RAVSegmentIndicatorView.h */,
+				D2E14C5A1C9C9143007D149A /* RAVSegmentIndicatorView.m */,
 			);
 			name = RAVSevenSegmentView;
+			path = RAVSevenSegmintView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E14C5E1C9C9143007D149A /* RAVSegmentIndicatorView.m in Sources */,
 				D2E14C391C9C842F007D149A /* ViewController.m in Sources */,
 				D2E14C361C9C842F007D149A /* AppDelegate.m in Sources */,
 				D2E14C331C9C842F007D149A /* main.m in Sources */,
@@ -348,7 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = RAVSevenSegmentView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RAVSevenSegmentViewDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlekseyRochev.RAVSevenSegmentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,7 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = RAVSevenSegmentView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RAVSevenSegmentViewDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlekseyRochev.RAVSevenSegmentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +415,7 @@
 				D2E14C521C9C842F007D149A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2E14C531C9C842F007D149A /* Build configuration list for PBXNativeTarget "RAVSevenSegmentViewTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +424,7 @@
 				D2E14C551C9C842F007D149A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
