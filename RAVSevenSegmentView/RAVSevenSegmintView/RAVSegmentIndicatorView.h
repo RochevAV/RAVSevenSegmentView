@@ -19,74 +19,74 @@ IB_DESIGNABLE
 
 @interface RAVSegmentIndicatorView : UIView <NSCopying>
 /**
- *@brief Тип шрифта
- *@note по заданию реализовано только два типа: вытянутый (Condensed) и пухлый (Plump)
+ *@brief Font type
+ *@note Condensed &Plump
  *
  */
 @property RAVSegmentIndicatorViewFontType typeFont;
 
 /**
- *@brief Цвет подсветки сегментов индикатора
- *@note При установке цвета, сбрасывается анимация
- *@warning НЕ НАДО ПОСТОЯННО УСТАНАВЛИВАТЬ ЦВЕТ!
+ *@brief Segment backlight color
+ *@note If set color then animation break
+ *@warning It is not necessary to often set color!
  *
  */
 @property (nonatomic, copy) IBInspectable UIColor *colorActive;
 /**
- *@brief Цвет сегментов индикатора по умолчанию (фон)
- *@note При установке цвета, сбрасывается анимация
- *@warning НЕ НАДО ПОСТОЯННО УСТАНАВЛИВАТЬ ЦВЕТ!
+ *@brief Indicator color
+ *@note If set color then animation break
+ *@warning It is not necessary to often set color!
  *
  */
 @property (nonatomic, copy) IBInspectable UIColor *colorDefault;
 /**
- *@brief Значение
- *@note При установке значения запускается анимация, если свойство animation == YES
+ *@brief Value
+ *@note If property 'animation' == YES then after setting value start animation
  *
  */
 @property (nonatomic) NSInteger value;
 /**
- *@brief Код - двоичное число
- *@note Последовательность 0 и 1, номеру по порядку соответствует сегмент, если установлен в еденицу значит сегмент горит. При установке значения запускается анимация, если свойство animation == YES
+ *@brief Code - binary value
+ *@note  If property 'animation' == YES then after setting value start animation
  *
  */
 @property (nonatomic) NSInteger codeIndicator;
 /**
- *@brief анимация
- *@note  Наличие анимации при смене значения индикатора
+ *@brief Animation
+ *@note
  *
  */
 @property (nonatomic) IBInspectable BOOL animation;
 /**
- *@brief Продолжительность анимации
- *@note  Продолжительность анимации смены значения индикатора
+ *@brief Animation Duration
+ *@note
  *
  */
 @property (nonatomic) IBInspectable NSTimeInterval animationDuration;
 /*!
- *@brief Массив слоев, из которых состоит индикатор
- *@brief Используется для добавления анимации при изменении значения индикатора
+ *@brief Array layers
+ *@brief
  */
 @property (nonatomic, readonly) NSDictionary *layers;
 /**
- *@brief Число является еденицей
- *@note  Тысячи, сотни, десятки, еденицы - в этом контектсе. Будет стоять точка после цифры
+ *@brief Indicator with point
+ *@note
  *
  */
 @property (nonatomic, getter=isOne) IBInspectable BOOL one;
 /**
- *@brief Индикатор выключен
- *@note  Работает аналогично методу clearAllSegments
+ *@brief Indicator is off
+ *@note  All elements disabled
  *
  */
 @property (nonatomic, getter=isOff) BOOL off;
 /**
- *@brief Все сегменты переводятся в неактивное состояние
+ *@brief All segments in not active
  *
  */
 - (void) clearAllSegments;
 /**
- *@brief Все сегменты переводятся в активное состояние
+ *@brief All segments in active
  *
  */
 - (void) setAllSegments;

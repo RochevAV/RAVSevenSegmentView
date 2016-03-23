@@ -28,6 +28,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="value">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="one" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
