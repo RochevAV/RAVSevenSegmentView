@@ -1,2 +1,2 @@
 # RAVSevenSegmentView
-UIView subclass to display seven-segment display for iOS
+UIView subclass to display seven-segment for iOS
