@@ -1,0 +1,16 @@
+PODS:
+  - SevenSegmentIndicator (0.1.0)
+
+DEPENDENCIES:
+  - SevenSegmentIndicator (from `../`)
+
+EXTERNAL SOURCES:
+  SevenSegmentIndicator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SevenSegmentIndicator: eb7d72158b4ac27f9abb6514646c191c972258dc
+
+PODFILE CHECKSUM: 28931c6c05b4441bdbd6013bff961039521cd492
+
+COCOAPODS: 1.9.0
