@@ -426,8 +426,8 @@ const NSTimeInterval RAVSegmentIndicatorViewAnimationDuraion = 0.2;
     }
     
     CAKeyframeAnimation *fillColorAnimation = [RAVSegmentIndicatorView fillColorAnimationFromColor:fromColor
-                                                                                toColor:toColor
-                                                                               duration:self.animationDuration];
+                                                                                           toColor:toColor
+                                                                                          duration:self.animationDuration];
     
     NSString *keyAnimation = [NSString stringWithFormat:@"%@%@", kAnimationSegmentFillColorKey, segmentKey];
     
