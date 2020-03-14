@@ -125,6 +125,6 @@ IB_DESIGNABLE
 
 + (CAKeyframeAnimation*) fillColorAnimationFromColor: (UIColor *) fromColor
                                              toColor: (UIColor *) toColor
-                                            duration:(CGFloat) duration;
+                                            duration: (NSTimeInterval) duration;
 
 @end
